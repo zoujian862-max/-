@@ -1,0 +1,8 @@
+{
+  "name": "保险与合同风险分析器",
+  "description": "专业的保险条款与法律合同风险识别工具，利用 AI 深度分析合同陷阱，提供通俗易懂的讲解与法律参考，帮助普通人防范诈骗与法律风险。",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": []
+}

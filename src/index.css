@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'PingFang SC', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  
+  --color-background: #f4f7fa;
+  --color-foreground: #334155;
+  --color-card: #ffffff;
+  --color-card-foreground: #334155;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #334155;
+  --color-primary: #2563eb;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f1f5f9;
+  --color-secondary-foreground: #1e40af;
+  --color-muted: #f8fafc;
+  --color-muted-foreground: #64748b;
+  --color-accent: #eff6ff;
+  --color-accent-foreground: #2563eb;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #e2e8f0;
+  --color-input: #e2e8f0;
+  --color-ring: #2563eb;
+  --color-radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  .highlight-risk {
+    @apply bg-red-100 border-b-2 border-red-500 cursor-help px-0.5;
+  }
+  .highlight-warning {
+    @apply bg-orange-100 border-b-2 border-orange-500 cursor-help px-0.5;
+  }
+  .risk-meter-card {
+    @apply bg-white p-5 rounded-2xl text-center border border-border shadow-sm;
+  }
+  .meter-value {
+    @apply text-4xl font-extrabold text-destructive;
+  }
+  .meter-label {
+    @apply text-xs text-muted-foreground mt-1;
+  }
+}
+
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
